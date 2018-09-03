@@ -1,0 +1,31 @@
+{
+    "name": "acostadu/pagospro",
+    "description": "Pagos por medio de WebPay (Transbank)",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Danny Acosta Borges",
+            "email": "acostadu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.6.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~5.0"
+    },
+    "autoload": {        
+        "psr-4": {
+            "Acostadu\\PagosPro\\Webpay\\": "src/",
+            "Acostadu\\PagosPro\\Webpay\\": "src/Webpay/libwebpay/",
+            "Acostadu\\PagosPro\\Webpay\\": "src/Webpay/libwebpay/soap/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acostadu\\PagosPro\\Tests\\": "tests"
+        }
+    }    
+}
